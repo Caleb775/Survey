@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- top of page -->
+    <h1 id="title">Game Survey</h1>
+    <p id="description">This Survey is about the most preferred video-game genres</p>
+    
+    <!-- beginning of form / labels -->
+    <form id="survey-form">
+      
+        <label id="name-label" class="left">What's Your Name?</label>
+        <input class="txt" id="name" type="text" placeholder="Name" required/>
+    
+        <label id="email-label" class="left">Enter Your Email</label>
+        <input class="txt" id="email" type="email" placeholder="Email" required/>
+      
+        <label id="number-label" class="left">How Old Are You?</label>
+        <input class="txt" id="number" class="left" type="number" placeholder="Age" min="8" max="120"/>
+
+        <!-- dropdown menu -->
+        <label>Select Your Gender</label>
+        <select id="dropdown">
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+
+        <!-- radio inputs -->
+        <fieldset>
+            <legend>What Type of Games do you play more?</legend>
+            <div class="radio-container">
+                <input id="single" type="radio" name="game-type" value="1" checked>
+                <label for="single">Single Player</label>
+          
+                <input id="multiplayer" type="radio" name="game-type" value="2">
+                <label for="multiplayer">Multiplayer</label>
+            </div>
+        </fieldset>
+
+        <!-- game genre checkboxes -->
+        <fieldset>
+            <legend>Game Genres</legend>
+            <input class="" type="checkbox" id="horror" name="genre-1" value="0">
+            <label class="check" for="horror">Horror</label>
+          
+            <input type="checkbox" id="adventure" name="genre-2" value="1">
+            <label class="check" for="adventure">Adventure</label>
+          
+            <input type="checkbox" id="action" name="genre-3" value="2">
+            <label class="check" for="action">Action</label>    
+
+            <input class="" type="checkbox" id="role-play" name="genre=4" value="3">
+            <label class="check" for="role-play">Role-Play</label>  
+
+            <input  type="checkbox" id="sports-racing" name="genre=5" value="4">
+            <label class="check" for="sports-racing">Sports & Racing</label>  
+
+            <input type="checkbox" id="simulation" name="genre-6" value="5">
+            <label class="check" for="simulation">Simulation</label>  
+
+            <input type="checkbox" id="strategy" name="genr=7" value="6">
+            <label class="check" for="strategy">Strategy</label>
+        </fieldset>
+
+        <!-- textarea -->
+        <textarea name="feedback" placeholder="Comments..."></textarea>
+
+        <!-- submit button -->
+        <input type="submit" id="submit" value="Submit" />
+    </form>
+</body>
+</html>

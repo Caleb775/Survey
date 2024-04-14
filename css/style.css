@@ -1,0 +1,111 @@
+body {
+    margin: 0px;
+    padding: 50px;
+    background-color: hsl(50, 90%, 90%);
+    color: #af6f5f;
+    font-family: Garamond;
+    font-size: 18px
+    }
+    
+    h1, p {
+    margin: 1em auto;
+    text-align: center;
+    }
+    
+    
+    
+    .txt {
+    margin: 10 15px 0 0;
+      width: 100%;
+      min-height: 1em;
+      border: none;
+    }
+    
+    
+    input[type="checkbox"] {
+        display: none; 
+    }
+    
+    .check {
+        position: relative;
+        cursor: pointer;
+        padding-left: 25px;
+    }
+    
+    .check:before {
+        content: "";
+        position: absolute;
+        left: 5px;
+        top: 2px;
+        width: 10px;
+        height: 10px;
+        border: 3px solid #af6f5f;
+        border-radius: 5px;
+    }
+    
+    
+    input[type="checkbox"]:checked + .check:before {
+        background-color: #af6f5f; 
+    }
+    
+    
+    textarea {
+    margin: 25px 0 0 0;
+      width: 100%;
+      min-height: 120px;
+      padding: 0.6rem;
+      resize: vertical;
+      background-color: hsl(50, 90%, 95%);
+    }
+    
+    input, textarea {
+      background-color: hsl(50, 90%, 95%);
+      border: 1px solid hsl(50, 90%, 95%);
+      color: #af6f5f;
+    }
+    
+    form {
+      width: 80vw;
+      min-width: 300px;
+      max-width: 800px;
+      margin: 0 auto;
+      padding-bottom: 3em;
+    }
+    
+    .radio-container {
+        text-align: center;
+    }
+    
+    .radio-container input[type="radio"],
+    .radio-container label {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    
+    label {
+      display: inline-block;
+      margin: 0.5rem 0;
+    }
+    
+    fieldset {
+      border: solid;
+      padding: 15px;
+      background-color: hsl(50, 90%, 95%);
+    }
+    
+    
+    input[type="submit"] {
+      display: block;
+      width: 30%;
+      margin: 2em auto;
+      height: 2em;
+      font-size: 1.2rem;
+      background-color: hsl(50, 90%, 95%);
+      border-color: grey;
+      min-width: 30px;
+    }
+    
+    ::placeholder {
+      color: #af6f5f
+    }
+    
