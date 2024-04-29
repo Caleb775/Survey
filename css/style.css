@@ -1,3 +1,8 @@
+:root {
+  --background-color1: #af6f5f;
+  --background-color2: hsl(50, 90%, 95%);
+}
+
 body {
     margin: 0px;
     padding: 50px;
@@ -39,13 +44,13 @@ body {
         top: 2px;
         width: 10px;
         height: 10px;
-        border: 3px solid #af6f5f;
+        border: 3px solid var(--background-color1);
         border-radius: 5px;
     }
     
     
     input[type="checkbox"]:checked + .check:before {
-        background-color: #af6f5f; 
+        background-color: var(--background-color1); 
     }
     
     
@@ -55,12 +60,12 @@ body {
       min-height: 120px;
       padding: 0.6rem;
       resize: vertical;
-      background-color: hsl(50, 90%, 95%);
+      background-color: var(--background-color2);
     }
     
     input, textarea {
-      background-color: hsl(50, 90%, 95%);
-      border: 1px solid hsl(50, 90%, 95%);
+      background-color: var(--background-color2);
+      border: 1px solid var(--background-color2);
       color: #af6f5f;
     }
     
@@ -70,6 +75,7 @@ body {
       max-width: 800px;
       margin: 0 auto;
       padding-bottom: 3em;
+    
     }
     
     .radio-container {
@@ -90,7 +96,7 @@ body {
     fieldset {
       border: solid;
       padding: 15px;
-      background-color: hsl(50, 90%, 95%);
+      background-color: var(--background-color2);
     }
     
     
@@ -100,12 +106,12 @@ body {
       margin: 2em auto;
       height: 2em;
       font-size: 1.2rem;
-      background-color: hsl(50, 90%, 95%);
+      background-color: var(--background-color2);
       border-color: grey;
       min-width: 30px;
     }
     
     ::placeholder {
-      color: #af6f5f
+      color: var(--background-color);
     }
     
